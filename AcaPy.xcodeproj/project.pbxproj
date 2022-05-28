@@ -16,6 +16,13 @@
 		0913EA6E2839A22F008A4D42 /* AcaPyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA6D2839A22F008A4D42 /* AcaPyTests.swift */; };
 		0913EA782839A22F008A4D42 /* AcaPyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA772839A22F008A4D42 /* AcaPyUITests.swift */; };
 		0913EA7A2839A22F008A4D42 /* AcaPyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA792839A22F008A4D42 /* AcaPyUITestsLaunchTests.swift */; };
+		0913EA882839B05A008A4D42 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA872839B05A008A4D42 /* ConnectionView.swift */; };
+		0913EA8A2839B6A6008A4D42 /* DataClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA892839B6A6008A4D42 /* DataClasses.swift */; };
+		0913EA8C283AB745008A4D42 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA8B283AB745008A4D42 /* MainView.swift */; };
+		0913EA8E283D3875008A4D42 /* CreateInvitationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA8D283D3874008A4D42 /* CreateInvitationSheet.swift */; };
+		0913EA90283D437D008A4D42 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA8F283D437D008A4D42 /* Agent.swift */; };
+		0913EA93283D5EE4008A4D42 /* AcceptInvitationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA92283D5EE4008A4D42 /* AcceptInvitationSheet.swift */; };
+		0913EA95283D832D008A4D42 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913EA94283D832D008A4D42 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		0913EA732839A22F008A4D42 /* AcaPyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcaPyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0913EA772839A22F008A4D42 /* AcaPyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcaPyUITests.swift; sourceTree = "<group>"; };
 		0913EA792839A22F008A4D42 /* AcaPyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcaPyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0913EA872839B05A008A4D42 /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		0913EA892839B6A6008A4D42 /* DataClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClasses.swift; sourceTree = "<group>"; };
+		0913EA8B283AB745008A4D42 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0913EA8D283D3874008A4D42 /* CreateInvitationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInvitationSheet.swift; sourceTree = "<group>"; };
+		0913EA8F283D437D008A4D42 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		0913EA92283D5EE4008A4D42 /* AcceptInvitationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptInvitationSheet.swift; sourceTree = "<group>"; };
+		0913EA94283D832D008A4D42 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +112,15 @@
 		0913EA562839A22D008A4D42 /* AcaPy */ = {
 			isa = PBXGroup;
 			children = (
+				0913EA862839B046008A4D42 /* Views */,
 				0913EA572839A22D008A4D42 /* AcaPyApp.swift */,
 				0913EA592839A22D008A4D42 /* ContentView.swift */,
 				0913EA5B2839A22F008A4D42 /* Assets.xcassets */,
 				0913EA602839A22F008A4D42 /* Persistence.swift */,
 				0913EA622839A22F008A4D42 /* AcaPy.xcdatamodeld */,
 				0913EA5D2839A22F008A4D42 /* Preview Content */,
+				0913EA892839B6A6008A4D42 /* DataClasses.swift */,
+				0913EA8F283D437D008A4D42 /* Agent.swift */,
 			);
 			path = AcaPy;
 			sourceTree = "<group>";
@@ -131,6 +148,26 @@
 				0913EA792839A22F008A4D42 /* AcaPyUITestsLaunchTests.swift */,
 			);
 			path = AcaPyUITests;
+			sourceTree = "<group>";
+		};
+		0913EA862839B046008A4D42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0913EA91283D5EAE008A4D42 /* Sheets */,
+				0913EA872839B05A008A4D42 /* ConnectionView.swift */,
+				0913EA8B283AB745008A4D42 /* MainView.swift */,
+				0913EA94283D832D008A4D42 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0913EA91283D5EAE008A4D42 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				0913EA8D283D3874008A4D42 /* CreateInvitationSheet.swift */,
+				0913EA92283D5EE4008A4D42 /* AcceptInvitationSheet.swift */,
+			);
+			path = Sheets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0913EA8E283D3875008A4D42 /* CreateInvitationSheet.swift in Sources */,
+				0913EA882839B05A008A4D42 /* ConnectionView.swift in Sources */,
+				0913EA8C283AB745008A4D42 /* MainView.swift in Sources */,
+				0913EA90283D437D008A4D42 /* Agent.swift in Sources */,
 				0913EA642839A22F008A4D42 /* AcaPy.xcdatamodeld in Sources */,
 				0913EA612839A22F008A4D42 /* Persistence.swift in Sources */,
 				0913EA5A2839A22D008A4D42 /* ContentView.swift in Sources */,
+				0913EA8A2839B6A6008A4D42 /* DataClasses.swift in Sources */,
+				0913EA93283D5EE4008A4D42 /* AcceptInvitationSheet.swift in Sources */,
 				0913EA582839A22D008A4D42 /* AcaPyApp.swift in Sources */,
+				0913EA95283D832D008A4D42 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
